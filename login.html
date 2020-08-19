@@ -12,7 +12,7 @@
 
     <div id="container">
         <form id="form">
-
+            <!-- Login form -->
             <label for="name">Full Name</label><br>
             <input type="text" class="formElements" id="name" placeholder="Your Name" onchange="nameCheck()"><br>
             <p id="nameError"></p>
@@ -43,6 +43,7 @@
 
         </form>
 
+        <!-- OTP enter msg to user -->
         <form id="msg">
             <p>
                 Dear <span id="fname"></span><br>
@@ -54,6 +55,7 @@
             <input type="submit" id="validate" value="Validate" onclick="otpCheck(); return false">
         </form>
 
+        <!-- Successful validation form -->
         <div id="alert">
             <p>Successful Validation</p>
             <a href="index.html">

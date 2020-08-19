@@ -11,12 +11,6 @@ function nameCheck() {
     if (name.length < 9) {
         document.getElementById("nameError").innerHTML = "Name must contain minimum two words with minimum 4 characters each";
     }
-
-    if(!(name.match(letters))){
-        
-            document.getElementById("nameError").innerHTML = "Only alphabets allowed";
-    }
-     
     
 }
 
@@ -82,6 +76,7 @@ function msg() {
 
 }
 
+// Validating otp
 function otpCheck() {
     var otpReceive = document.getElementById("otp").value;
 
