@@ -1,16 +1,16 @@
 //Validate name function
 var name = document.getElementById("name").value;
 function nameCheck() {
+    ch=name.charAt(i);
+    for(i=0;i<name.length;i++){
+        if(!(ch>='a'&& ch<='z') && !(ch>='A' && ch<=Z) && !(ch==' ')&& !(name.length>9)){
+            document.getElementById("nameError").innerHTML = "Invalid name.Name can contain 2 words with 4 letters each";
+            return false;
+        }
 
-    var letters = /^[A-Za-z]+$/;
-    if(name==""){
-        document.getElementById("nameError").innerHTML = "Please fill your name";
-        //return false;
     }
-   
-    if (name.length < 9) {
-        document.getElementById("nameError").innerHTML = "Name must contain minimum two words with minimum 4 characters each";
-    }
+    return true;
+    
     
 }
 
